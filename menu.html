@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/menu.css">
+  <title>Document</title>
+</head>
+  <body>
+    <div>
+      <h1>Menu flappy</h1>
+      <div  class="externo">
+        <form action="index.html" method="GET" id="form">
+          
+          <div class="inputdiv">
+            <span>Nome do jogador: </span>
+            <div>
+              <input type="text" name="nome" value="player">
+            </div>
+          </div>
+          
+          <div class="inputdiv">
+            <span>Cenario do jogo: </span>
+            <div>
+              <input type="radio" name="cenario" value="1"><label for="1"> Noturno</label>
+              <input type="radio" name="cenario" value="2" checked><label for="2"> Diurno</label>
+            </div>
+          </div>
+        
+          <div class="inputdiv">
+            <span>Abertura dos canos: </span>
+            <div>
+              <input type="radio" name="intervalo" value="300"><label for="1"> Fácil</label>
+              <input type="radio" name="intervalo" value="220" checked><label for="2"> Medio</label>
+              <input type="radio" name="intervalo" value="160"><label for="3"> Difícil</label>
+            </div>
+          </div> 
+          
+          <div class="inputdiv">
+            <span>Distancia entre os canos: </span>
+            <div>
+              <input type="radio" name="distancia" value="500"><label for="1"> Fácil</label>
+              <input type="radio" name="distancia" value="400" checked><label for="2"> Medio</label>
+              <input type="radio" name="distancia" value="300"><label for="3"> Difícil</label>
+            </div>
+          </div>
+          
+          <div class="inputdiv">
+            <span>Velocidade do jogo: </span>
+            <input type="text" name="velocidade_jogo" min="1" max="10" value="20">
+          </div>
+          
+          <div class="inputdiv">
+            <span>Personagem: </span>
+            <div>
+              <input type="radio" name="personagem" value="1" checked><label for="1"> <img src="./img/passaro.png" width="30px"></label>
+              <input type="radio" name="personagem" value="2"><label for="2"> <img src="./img/passaro2.png" width="30px"></label>
+              <input type="radio" name="personagem" value="3"><label for="3"> <img src="./img/passaro3.png" width="30px"></label>
+            </div>
+          </div>
+
+          <div class="inputdiv">
+            <span>Tipo de jogo: </span>
+              <div>
+                <input type="radio" name="tipo" value="1"><label for="1"> treino</label>
+                <input type="radio" name="tipo" value="2" checked><label for="2"> real</label>
+              </div>
+          </div>
+            
+          <div class="inputdiv">
+            <span>Velocidade do personagem: </span>
+              <div>
+                <input type="radio" name="velocidade" value="4"><label for="1"> baixa</label>
+                <input type="radio" name="velocidade" value="8" checked><label for="2"> media</label>
+                <input type="radio" name="velocidade" value="14"><label for="3"> rápida</label>
+              </div>
+          </div>
+          
+          <div class="inputdiv">
+            <span>Pontuação: </span>
+            <div>
+              <input type="radio" name="pontuacao" value="1" checked><label for="1"> 1</label>
+              <input type="radio" name="pontuacao" value="10"><label for="2"> 10</label>
+              <input type="radio" name="pontuacao" value="100"><label for="3"> 100</label>
+            </div>
+            </div>
+            
+          <input class="botao" id="confirmar" type="submit" value="iniciar" onclick="init()">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
